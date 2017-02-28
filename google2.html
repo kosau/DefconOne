@@ -1,0 +1,51 @@
+﻿<script>
+function addstring()
+{
+var s="http://www.askmrrobot.com/wow/player/eu/";
+
+var url=s+document.getElementById("searchreino").value+"/"+document.getElementById("searchname").value;
+window.open(url);
+document.getElementById("frmcharacter").submit();
+document.getElementById("frmreino").submit();
+
+}
+</script>
+<center>
+<FORM method=GET action="http://www.google.com/search" target="_blank">
+<A HREF="http://www.google.com/" target="_blank">
+<IMG SRC="http://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" width="88" height="33" border="0" ALT="Google" align="absmiddle"></A>
+<INPUT TYPE=text name=q size=40 maxlength=255 value="">
+<INPUT TYPE=hidden name=hl value=es>
+<INPUT type=submit name=btnG VALUE="Búsqueda Google">
+</FORM>
+</center>
+<center>
+<form method="get" action="http://es.wowhead.com/" target="_blank">
+<A HREF="http://es.wowhead.com/" target="_blank">
+<IMG SRC="http://vignette4.wikia.nocookie.net/wowwiki/images/1/1a/Wowheadlogo.png/revision/latest?cb=20071024223113" width="100" height="50"border="0" ALT="Wowhead" align="absmiddle"></A> 
+  <input type="text" name="search" size="40" maxlength="255" value="" />
+  <input type="submit" value="Busca en WowHead" />
+</form>
+</center>
+<center>
+<form method="post" action="" target="_blank" id="frmcharacter">
+<A HREF="http://www.askmrrobot.com/wow/player" target="_blank">
+<IMG SRC="http://static.askmrrobot.com/images/ui/about_robot.png" width="110" height="45"border="0" ALT="Wowhead" align="absmiddle"></A> 
+  <input type="text" id="searchname" size="26" maxlength="255" value="" />
+  <select id="searchreino">
+     <option value="Zul'jin">Zul'jin</option>
+     <option value="Uldum">Uldum</option>
+     <option value="Sanguino">Sanguino</option>
+     <option value="Shen'dralar">Shen'dralar</option>
+    </select>
+  <input type="submit" onclick="addstring()" value="Busca en AskMrRobot" />
+</form>
+</center>
+</form>
+</center>
+   
+</form>
+
+
+
+
